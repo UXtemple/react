@@ -9,74 +9,154 @@
  * @providesModule React
  */
 
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule React
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule React
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule React
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule React
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule React
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule React
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule React
+ */
+
 'use strict';
 
-var ReactChildren = require('ReactChildren');
-var ReactComponent = require('ReactComponent');
-var ReactClass = require('ReactClass');
-var ReactDOMFactories = require('ReactDOMFactories');
-var ReactElement = require('ReactElement');
-var ReactPropTypes = require('ReactPropTypes');
-var ReactVersion = require('ReactVersion');
+import ReactChildren from './children/ReactChildren';
+import ReactComponent from './modern/class/ReactComponent';
+import ReactClass from './classic/class/ReactClass';
+import ReactDOMFactories from './classic/element/ReactDOMFactories';
+import ReactElement from './classic/element/ReactElement';
+import ReactElementValidator from './classic/element/ReactElementValidator'; // __DEV__
+import ReactPropTypes from './classic/types/ReactPropTypes';
+import ReactVersion from '../ReactVersion';
+import onlyChild from './children/onlyChild';
+import warning from 'warning';
 
-var onlyChild = require('onlyChild');
-var warning = require('warning');
+export var createElement = __DEV__ ? ReactElementValidator.createElement : ReactElement.createElement;
+export var createFactory = __DEV__ ? ReactElementValidator.createFactory : ReactElement.createFactory;
+export var cloneElement = __DEV__ ? ReactElementValidator.cloneElement : ReactElement.cloneElement;
 
-var createElement = ReactElement.createElement;
-var createFactory = ReactElement.createFactory;
-var cloneElement = ReactElement.cloneElement;
+var warned = false;
+function spreadWithWarning() {
+  warning(
+    warned,
+    'React.__spread is deprecated and should not be used. Use ' +
+    'Object.assign directly or another helper function with similar ' +
+    'semantics. You may be seeing this warning due to your compiler. ' +
+    'See https://fb.me/react-spread-deprecation for more details.'
+  );
+  warned = true;
+  return Object.assign.apply(null, arguments);
+};
 
-if (__DEV__) {
-  var ReactElementValidator = require('ReactElementValidator');
-  createElement = ReactElementValidator.createElement;
-  createFactory = ReactElementValidator.createFactory;
-  cloneElement = ReactElementValidator.cloneElement;
+export var __spread = __DEV__ ? Object.assign : spreadWithWarning;
+
+export function createMixin(mixin) {
+  // Currently a noop. Will be used to validate and trace mixins.
+  return mixin;
 }
 
-var __spread = Object.assign;
+export var Children = {
+  map: ReactChildren.map,
+  forEach: ReactChildren.forEach,
+  count: ReactChildren.count,
+  toArray: ReactChildren.toArray,
+  only: onlyChild,
+};
 
-if (__DEV__) {
-  var warned = false;
-  __spread = function() {
-    warning(
-      warned,
-      'React.__spread is deprecated and should not be used. Use ' +
-      'Object.assign directly or another helper function with similar ' +
-      'semantics. You may be seeing this warning due to your compiler. ' +
-      'See https://fb.me/react-spread-deprecation for more details.'
-    );
-    warned = true;
-    return Object.assign.apply(null, arguments);
-  };
-}
+export {
+  ReactComponent as Component,
+  ReactDOMFactories as DOM,
+  ReactPropTypes as PropTypes,
+  ReactVersion as version,
+};
 
-var React = {
+export var createClass = ReactClass.createClass;
+export var isValidElement = ReactElement.isValidElement;
 
+export default {
   // Modern
-
-  Children: {
-    map: ReactChildren.map,
-    forEach: ReactChildren.forEach,
-    count: ReactChildren.count,
-    toArray: ReactChildren.toArray,
-    only: onlyChild,
-  },
+  Children: Children,
 
   Component: ReactComponent,
 
   createElement: createElement,
   cloneElement: cloneElement,
-  isValidElement: ReactElement.isValidElement,
+  isValidElement: isValidElement,
 
   // Classic
 
   PropTypes: ReactPropTypes,
   createClass: ReactClass.createClass,
   createFactory: createFactory,
-  createMixin: function(mixin) {
-    // Currently a noop. Will be used to validate and trace mixins.
-    return mixin;
-  },
+  createMixin: createMixin,
 
   // This looks DOM specific but these are actually isomorphic helpers
   // since they are just generating DOM strings.
@@ -87,5 +167,3 @@ var React = {
   // Deprecated hook for JSX spread, don't use this for anything.
   __spread: __spread,
 };
-
-module.exports = React;
