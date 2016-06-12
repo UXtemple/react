@@ -9,13 +9,45 @@
  * @providesModule DOMLazyTree
  */
 
+/**
+ * Copyright 2015-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule DOMLazyTree
+ */
+
+/**
+ * Copyright 2015-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule DOMLazyTree
+ */
+
+/**
+ * Copyright 2015-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule DOMLazyTree
+ */
+
 'use strict';
 
-var DOMNamespaces = require('DOMNamespaces');
-var setInnerHTML = require('setInnerHTML');
-
-var createMicrosoftUnsafeLocalFunction = require('createMicrosoftUnsafeLocalFunction');
-var setTextContent = require('setTextContent');
+import DOMNamespaces from 'DOMNamespaces';
+import setInnerHTML from 'setInnerHTML';
+import createMicrosoftUnsafeLocalFunction from 'createMicrosoftUnsafeLocalFunction';
+import setTextContent from 'setTextContent';
 
 var ELEMENT_NODE_TYPE = 1;
 var DOCUMENT_FRAGMENT_NODE_TYPE = 11;
@@ -129,4 +161,4 @@ DOMLazyTree.queueChild = queueChild;
 DOMLazyTree.queueHTML = queueHTML;
 DOMLazyTree.queueText = queueText;
 
-module.exports = DOMLazyTree;
+export default DOMLazyTree;

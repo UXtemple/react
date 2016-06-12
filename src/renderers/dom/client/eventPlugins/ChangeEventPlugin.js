@@ -9,21 +9,53 @@
  * @providesModule ChangeEventPlugin
  */
 
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ChangeEventPlugin
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ChangeEventPlugin
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ChangeEventPlugin
+ */
+
 'use strict';
 
-var EventConstants = require('EventConstants');
-var EventPluginHub = require('EventPluginHub');
-var EventPropagators = require('EventPropagators');
-var ExecutionEnvironment = require('ExecutionEnvironment');
-var ReactDOMComponentTree = require('ReactDOMComponentTree');
-var ReactUpdates = require('ReactUpdates');
-var SyntheticEvent = require('SyntheticEvent');
-
-var inputValueTracking = require('inputValueTracking');
-var getEventTarget = require('getEventTarget');
-var isEventSupported = require('isEventSupported');
-var isTextInputElement = require('isTextInputElement');
-var keyOf = require('keyOf');
+import EventConstants from 'EventConstants';
+import EventPluginHub from 'EventPluginHub';
+import EventPropagators from 'EventPropagators';
+import ExecutionEnvironment from 'ExecutionEnvironment';
+import ReactDOMComponentTree from 'ReactDOMComponentTree';
+import ReactUpdates from 'ReactUpdates';
+import SyntheticEvent from 'SyntheticEvent';
+import inputValueTracking from 'inputValueTracking';
+import getEventTarget from 'getEventTarget';
+import isEventSupported from 'isEventSupported';
+import isTextInputElement from 'isTextInputElement';
+import keyOf from 'keyOf';
 
 var topLevelTypes = EventConstants.topLevelTypes;
 
@@ -357,4 +389,4 @@ var ChangeEventPlugin = {
 
 };
 
-module.exports = ChangeEventPlugin;
+export default ChangeEventPlugin;

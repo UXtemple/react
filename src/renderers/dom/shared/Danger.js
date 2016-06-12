@@ -9,15 +9,47 @@
  * @providesModule Danger
  */
 
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule Danger
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule Danger
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule Danger
+ */
+
 'use strict';
 
-var DOMLazyTree = require('DOMLazyTree');
-var ExecutionEnvironment = require('ExecutionEnvironment');
-
-var createNodesFromMarkup = require('createNodesFromMarkup');
-var emptyFunction = require('emptyFunction');
-var getMarkupWrap = require('getMarkupWrap');
-var invariant = require('invariant');
+import DOMLazyTree from 'DOMLazyTree';
+import ExecutionEnvironment from 'ExecutionEnvironment';
+import createNodesFromMarkup from 'createNodesFromMarkup';
+import emptyFunction from 'emptyFunction';
+import getMarkupWrap from 'getMarkupWrap';
+import invariant from 'invariant';
 
 var OPEN_TAG_NAME_EXP = /^(<[^ \/>]+)/;
 var RESULT_INDEX_ATTR = 'data-danger-index';
@@ -182,4 +214,4 @@ var Danger = {
 
 };
 
-module.exports = Danger;
+export default Danger;

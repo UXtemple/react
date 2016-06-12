@@ -9,16 +9,48 @@
  * @providesModule TapEventPlugin
  */
 
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule TapEventPlugin
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule TapEventPlugin
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule TapEventPlugin
+ */
+
 'use strict';
 
-var EventConstants = require('EventConstants');
-var EventPluginUtils = require('EventPluginUtils');
-var EventPropagators = require('EventPropagators');
-var SyntheticUIEvent = require('SyntheticUIEvent');
-var TouchEventUtils = require('TouchEventUtils');
-var ViewportMetrics = require('ViewportMetrics');
-
-var keyOf = require('keyOf');
+import EventConstants from 'EventConstants';
+import EventPluginUtils from 'EventPluginUtils';
+import EventPropagators from 'EventPropagators';
+import SyntheticUIEvent from 'SyntheticUIEvent';
+import TouchEventUtils from 'TouchEventUtils';
+import ViewportMetrics from 'ViewportMetrics';
+import keyOf from 'keyOf';
 var topLevelTypes = EventConstants.topLevelTypes;
 
 var isStartish = EventPluginUtils.isStartish;
@@ -131,4 +163,4 @@ var TapEventPlugin = {
 
 };
 
-module.exports = TapEventPlugin;
+export default TapEventPlugin;

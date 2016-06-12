@@ -11,40 +11,77 @@
 
 /* global hasOwnProperty:true */
 
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactDOMComponent
+ */
+
+/* global hasOwnProperty:true */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactDOMComponent
+ */
+
+/* global hasOwnProperty:true */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactDOMComponent
+ */
+
+/* global hasOwnProperty:true */
+
 'use strict';
 
-var AutoFocusUtils = require('AutoFocusUtils');
-var CSSPropertyOperations = require('CSSPropertyOperations');
-var DOMLazyTree = require('DOMLazyTree');
-var DOMNamespaces = require('DOMNamespaces');
-var DOMProperty = require('DOMProperty');
-var DOMPropertyOperations = require('DOMPropertyOperations');
-var EventConstants = require('EventConstants');
-var EventPluginHub = require('EventPluginHub');
-var EventPluginRegistry = require('EventPluginRegistry');
-var ReactBrowserEventEmitter = require('ReactBrowserEventEmitter');
-var ReactComponentBrowserEnvironment =
-  require('ReactComponentBrowserEnvironment');
-var ReactDOMButton = require('ReactDOMButton');
-var ReactDOMComponentFlags = require('ReactDOMComponentFlags');
-var ReactDOMComponentTree = require('ReactDOMComponentTree');
-var ReactDOMInput = require('ReactDOMInput');
-var ReactDOMOption = require('ReactDOMOption');
-var ReactDOMSelect = require('ReactDOMSelect');
-var ReactDOMTextarea = require('ReactDOMTextarea');
-var ReactInstrumentation = require('ReactInstrumentation');
-var ReactMultiChild = require('ReactMultiChild');
-var ReactServerRenderingTransaction = require('ReactServerRenderingTransaction');
-
-var emptyFunction = require('emptyFunction');
-var escapeTextContentForBrowser = require('escapeTextContentForBrowser');
-var invariant = require('invariant');
-var isEventSupported = require('isEventSupported');
-var keyOf = require('keyOf');
-var shallowEqual = require('shallowEqual');
-var inputValueTracking = require('inputValueTracking');
-var validateDOMNesting = require('validateDOMNesting');
-var warning = require('warning');
+import AutoFocusUtils from 'AutoFocusUtils';
+import CSSPropertyOperations from 'CSSPropertyOperations';
+import DOMLazyTree from 'DOMLazyTree';
+import DOMNamespaces from 'DOMNamespaces';
+import DOMProperty from 'DOMProperty';
+import DOMPropertyOperations from 'DOMPropertyOperations';
+import EventConstants from 'EventConstants';
+import EventPluginHub from 'EventPluginHub';
+import EventPluginRegistry from 'EventPluginRegistry';
+import ReactBrowserEventEmitter from 'ReactBrowserEventEmitter';
+import ReactComponentBrowserEnvironment from 'ReactComponentBrowserEnvironment';
+import ReactDOMButton from 'ReactDOMButton';
+import ReactDOMComponentFlags from 'ReactDOMComponentFlags';
+import ReactDOMComponentTree from 'ReactDOMComponentTree';
+import ReactDOMInput from 'ReactDOMInput';
+import ReactDOMOption from 'ReactDOMOption';
+import ReactDOMSelect from 'ReactDOMSelect';
+import ReactDOMTextarea from 'ReactDOMTextarea';
+import ReactInstrumentation from 'ReactInstrumentation';
+import ReactMultiChild from 'ReactMultiChild';
+import ReactServerRenderingTransaction from 'ReactServerRenderingTransaction';
+import emptyFunction from 'emptyFunction';
+import escapeTextContentForBrowser from 'escapeTextContentForBrowser';
+import invariant from 'invariant';
+import isEventSupported from 'isEventSupported';
+import keyOf from 'keyOf';
+import shallowEqual from 'shallowEqual';
+import inputValueTracking from 'inputValueTracking';
+import validateDOMNesting from 'validateDOMNesting';
+import warning from 'warning';
 
 var Flags = ReactDOMComponentFlags;
 var deleteListener = EventPluginHub.deleteListener;
@@ -1211,4 +1248,4 @@ Object.assign(
   ReactMultiChild.Mixin
 );
 
-module.exports = ReactDOMComponent;
+export default ReactDOMComponent;

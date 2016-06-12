@@ -9,17 +9,49 @@
  * @providesModule DOMChildrenOperations
  */
 
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule DOMChildrenOperations
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule DOMChildrenOperations
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule DOMChildrenOperations
+ */
+
 'use strict';
 
-var DOMLazyTree = require('DOMLazyTree');
-var Danger = require('Danger');
-var ReactMultiChildUpdateTypes = require('ReactMultiChildUpdateTypes');
-var ReactDOMComponentTree = require('ReactDOMComponentTree');
-var ReactInstrumentation = require('ReactInstrumentation');
-
-var createMicrosoftUnsafeLocalFunction = require('createMicrosoftUnsafeLocalFunction');
-var setInnerHTML = require('setInnerHTML');
-var setTextContent = require('setTextContent');
+import DOMLazyTree from 'DOMLazyTree';
+import Danger from 'Danger';
+import ReactMultiChildUpdateTypes from 'ReactMultiChildUpdateTypes';
+import ReactDOMComponentTree from 'ReactDOMComponentTree';
+import ReactInstrumentation from 'ReactInstrumentation';
+import createMicrosoftUnsafeLocalFunction from 'createMicrosoftUnsafeLocalFunction';
+import setInnerHTML from 'setInnerHTML';
+import setTextContent from 'setTextContent';
 
 function getNodeAfter(parentNode, node) {
   // Special case for text components, which return [open, close] comments
@@ -249,4 +281,4 @@ var DOMChildrenOperations = {
 
 };
 
-module.exports = DOMChildrenOperations;
+export default DOMChildrenOperations;

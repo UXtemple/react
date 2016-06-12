@@ -9,12 +9,25 @@
  * @providesModule ReactDebugTool
  */
 
+/**
+ * Copyright 2016-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactDebugTool
+ */
+
 'use strict';
 
-var ExecutionEnvironment = require('ExecutionEnvironment');
-
-var performanceNow = require('performanceNow');
-var warning = require('warning');
+import ExecutionEnvironment from 'ExecutionEnvironment';
+import performanceNow from 'performanceNow';
+import ReactInvalidSetStateWarningDevTool from 'ReactInvalidSetStateWarningDevTool'; // __DEV__
+import ReactHostOperationHistoryDevtool from 'ReactHostOperationHistoryDevtool'; // __DEV__
+import ReactComponentTreeDevtool from 'ReactComponentTreeDevtool'; // __DEV__
+import warning from 'warning';
 
 var eventHandlers = [];
 var handlerDoesThrowForEvent = {};
@@ -311,9 +324,6 @@ var ReactDebugTool = {
 };
 
 if (__DEV__) {
-  var ReactInvalidSetStateWarningDevTool = require('ReactInvalidSetStateWarningDevTool');
-  var ReactHostOperationHistoryDevtool = require('ReactHostOperationHistoryDevtool');
-  var ReactComponentTreeDevtool = require('ReactComponentTreeDevtool');
   ReactDebugTool.addDevtool(ReactInvalidSetStateWarningDevTool);
   ReactDebugTool.addDevtool(ReactComponentTreeDevtool);
   ReactDebugTool.addDevtool(ReactHostOperationHistoryDevtool);
@@ -323,4 +333,4 @@ if (__DEV__) {
   }
 }
 
-module.exports = ReactDebugTool;
+export default ReactDebugTool;

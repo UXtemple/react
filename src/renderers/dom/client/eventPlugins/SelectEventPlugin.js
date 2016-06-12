@@ -9,19 +9,51 @@
  * @providesModule SelectEventPlugin
  */
 
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule SelectEventPlugin
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule SelectEventPlugin
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule SelectEventPlugin
+ */
+
 'use strict';
 
-var EventConstants = require('EventConstants');
-var EventPropagators = require('EventPropagators');
-var ExecutionEnvironment = require('ExecutionEnvironment');
-var ReactDOMComponentTree = require('ReactDOMComponentTree');
-var ReactInputSelection = require('ReactInputSelection');
-var SyntheticEvent = require('SyntheticEvent');
-
-var getActiveElement = require('getActiveElement');
-var isTextInputElement = require('isTextInputElement');
-var keyOf = require('keyOf');
-var shallowEqual = require('shallowEqual');
+import EventConstants from 'EventConstants';
+import EventPropagators from 'EventPropagators';
+import ExecutionEnvironment from 'ExecutionEnvironment';
+import ReactDOMComponentTree from 'ReactDOMComponentTree';
+import ReactInputSelection from 'ReactInputSelection';
+import SyntheticEvent from 'SyntheticEvent';
+import getActiveElement from 'getActiveElement';
+import isTextInputElement from 'isTextInputElement';
+import keyOf from 'keyOf';
+import shallowEqual from 'shallowEqual';
 
 var topLevelTypes = EventConstants.topLevelTypes;
 
@@ -220,4 +252,4 @@ var SelectEventPlugin = {
   },
 };
 
-module.exports = SelectEventPlugin;
+export default SelectEventPlugin;

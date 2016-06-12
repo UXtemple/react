@@ -88,15 +88,15 @@
 
 'use strict';
 
-import ReactChildren from './children/ReactChildren';
-import ReactComponent from './modern/class/ReactComponent';
-import ReactClass from './classic/class/ReactClass';
-import ReactDOMFactories from './classic/element/ReactDOMFactories';
-import ReactElement from './classic/element/ReactElement';
-import ReactElementValidator from './classic/element/ReactElementValidator'; // __DEV__
-import ReactPropTypes from './classic/types/ReactPropTypes';
-import ReactVersion from '../ReactVersion';
-import onlyChild from './children/onlyChild';
+import ReactChildren from 'ReactChildren';
+import ReactComponent from 'ReactComponent';
+import ReactClass from 'ReactClass';
+import ReactDOMFactories from 'ReactDOMFactories';
+import ReactElement from 'ReactElement';
+import ReactElementValidator from 'ReactElementValidator'; // __DEV__
+import ReactPropTypes from 'ReactPropTypes';
+import ReactVersion from 'ReactVersion';
+import onlyChild from 'onlyChild';
 import warning from 'warning';
 
 export var createElement = __DEV__ ? ReactElementValidator.createElement : ReactElement.createElement;

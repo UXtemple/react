@@ -9,13 +9,45 @@
  * @providesModule LinkedValueUtils
  */
 
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule LinkedValueUtils
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule LinkedValueUtils
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule LinkedValueUtils
+ */
+
 'use strict';
 
-var ReactPropTypes = require('ReactPropTypes');
-var ReactPropTypeLocations = require('ReactPropTypeLocations');
-
-var invariant = require('invariant');
-var warning = require('warning');
+import ReactPropTypes from 'ReactPropTypes';
+import ReactPropTypeLocations from 'ReactPropTypeLocations';
+import invariant from 'invariant';
+import warning from 'warning';
 
 var hasReadOnlyValue = {
   'button': true,
@@ -165,4 +197,4 @@ var LinkedValueUtils = {
   },
 };
 
-module.exports = LinkedValueUtils;
+export default LinkedValueUtils;

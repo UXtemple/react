@@ -9,13 +9,45 @@
  * @providesModule ReactDOMOption
  */
 
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactDOMOption
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactDOMOption
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactDOMOption
+ */
+
 'use strict';
 
-var ReactChildren = require('ReactChildren');
-var ReactDOMComponentTree = require('ReactDOMComponentTree');
-var ReactDOMSelect = require('ReactDOMSelect');
-
-var warning = require('warning');
+import ReactChildren from 'ReactChildren';
+import ReactDOMComponentTree from 'ReactDOMComponentTree';
+import ReactDOMSelect from 'ReactDOMSelect';
+import warning from 'warning';
 var didWarnInvalidOptionChildren = false;
 
 function flattenChildren(children) {
@@ -125,4 +157,4 @@ var ReactDOMOption = {
 
 };
 
-module.exports = ReactDOMOption;
+export default ReactDOMOption;

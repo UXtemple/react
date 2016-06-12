@@ -8,22 +8,50 @@
  *
  * @providesModule ReactServerRendering
  */
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactServerRendering
+ */
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactServerRendering
+ */
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactServerRendering
+ */
 'use strict';
 
-var ReactDOMContainerInfo = require('ReactDOMContainerInfo');
-var ReactDefaultBatchingStrategy = require('ReactDefaultBatchingStrategy');
-var ReactElement = require('ReactElement');
-var ReactInstrumentation = require('ReactInstrumentation');
-var ReactMarkupChecksum = require('ReactMarkupChecksum');
-var ReactReconciler = require('ReactReconciler');
-var ReactServerBatchingStrategy = require('ReactServerBatchingStrategy');
-var ReactServerRenderingTransaction =
-  require('ReactServerRenderingTransaction');
-var ReactUpdates = require('ReactUpdates');
-
-var emptyObject = require('emptyObject');
-var instantiateReactComponent = require('instantiateReactComponent');
-var invariant = require('invariant');
+import ReactDOMContainerInfo from 'ReactDOMContainerInfo';
+import ReactDefaultBatchingStrategy from 'ReactDefaultBatchingStrategy';
+import ReactElement from 'ReactElement';
+import ReactInstrumentation from 'ReactInstrumentation';
+import ReactMarkupChecksum from 'ReactMarkupChecksum';
+import ReactReconciler from 'ReactReconciler';
+import ReactServerBatchingStrategy from 'ReactServerBatchingStrategy';
+import ReactServerRenderingTransaction from 'ReactServerRenderingTransaction';
+import ReactUpdates from 'ReactUpdates';
+import emptyObject from 'emptyObject';
+import instantiateReactComponent from 'instantiateReactComponent';
+import invariant from 'invariant';
 
 /**
  * @param {ReactElement} element
@@ -93,7 +121,7 @@ function renderToStaticMarkup(element) {
   return renderToStringImpl(element, true);
 }
 
-module.exports = {
+export default {
   renderToString: renderToString,
   renderToStaticMarkup: renderToStaticMarkup,
 };

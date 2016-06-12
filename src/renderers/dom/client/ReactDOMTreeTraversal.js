@@ -9,9 +9,42 @@
  * @providesModule ReactDOMTreeTraversal
  */
 
+/**
+ * Copyright 2015-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactDOMTreeTraversal
+ */
+
+/**
+ * Copyright 2015-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactDOMTreeTraversal
+ */
+
+/**
+ * Copyright 2015-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactDOMTreeTraversal
+ */
+
 'use strict';
 
-var invariant = require('invariant');
+import invariant from 'invariant';
 
 /**
  * Return the lowest common ancestor of A and B, or null if they are in
@@ -125,7 +158,7 @@ function traverseEnterLeave(from, to, fn, argFrom, argTo) {
   }
 }
 
-module.exports = {
+export default {
   isAncestor: isAncestor,
   getLowestCommonAncestor: getLowestCommonAncestor,
   getParentInstance: getParentInstance,

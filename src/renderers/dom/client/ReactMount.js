@@ -9,29 +9,61 @@
  * @providesModule ReactMount
  */
 
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactMount
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactMount
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactMount
+ */
+
 'use strict';
 
-var DOMLazyTree = require('DOMLazyTree');
-var DOMProperty = require('DOMProperty');
-var ReactBrowserEventEmitter = require('ReactBrowserEventEmitter');
-var ReactCurrentOwner = require('ReactCurrentOwner');
-var ReactDOMComponentTree = require('ReactDOMComponentTree');
-var ReactDOMContainerInfo = require('ReactDOMContainerInfo');
-var ReactDOMFeatureFlags = require('ReactDOMFeatureFlags');
-var ReactElement = require('ReactElement');
-var ReactFeatureFlags = require('ReactFeatureFlags');
-var ReactInstrumentation = require('ReactInstrumentation');
-var ReactMarkupChecksum = require('ReactMarkupChecksum');
-var ReactReconciler = require('ReactReconciler');
-var ReactUpdateQueue = require('ReactUpdateQueue');
-var ReactUpdates = require('ReactUpdates');
-
-var emptyObject = require('emptyObject');
-var instantiateReactComponent = require('instantiateReactComponent');
-var invariant = require('invariant');
-var setInnerHTML = require('setInnerHTML');
-var shouldUpdateReactComponent = require('shouldUpdateReactComponent');
-var warning = require('warning');
+import DOMLazyTree from 'DOMLazyTree';
+import DOMProperty from 'DOMProperty';
+import ReactBrowserEventEmitter from 'ReactBrowserEventEmitter';
+import ReactCurrentOwner from 'ReactCurrentOwner';
+import ReactDOMComponentTree from 'ReactDOMComponentTree';
+import ReactDOMContainerInfo from 'ReactDOMContainerInfo';
+import ReactDOMFeatureFlags from 'ReactDOMFeatureFlags';
+import ReactElement from 'ReactElement';
+import ReactFeatureFlags from 'ReactFeatureFlags';
+import ReactInstrumentation from 'ReactInstrumentation';
+import ReactMarkupChecksum from 'ReactMarkupChecksum';
+import ReactReconciler from 'ReactReconciler';
+import ReactUpdateQueue from 'ReactUpdateQueue';
+import ReactUpdates from 'ReactUpdates';
+import emptyObject from 'emptyObject';
+import instantiateReactComponent from 'instantiateReactComponent';
+import invariant from 'invariant';
+import setInnerHTML from 'setInnerHTML';
+import shouldUpdateReactComponent from 'shouldUpdateReactComponent';
+import warning from 'warning';
 
 var ATTR_NAME = DOMProperty.ID_ATTRIBUTE_NAME;
 var ROOT_ATTR_NAME = DOMProperty.ROOT_ATTRIBUTE_NAME;
@@ -719,4 +751,4 @@ var ReactMount = {
   },
 };
 
-module.exports = ReactMount;
+export default ReactMount;

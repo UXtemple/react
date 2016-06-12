@@ -9,15 +9,47 @@
  * @providesModule traverseAllChildren
  */
 
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule traverseAllChildren
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule traverseAllChildren
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule traverseAllChildren
+ */
+
 'use strict';
 
-var ReactCurrentOwner = require('ReactCurrentOwner');
-var ReactElement = require('ReactElement');
-
-var getIteratorFn = require('getIteratorFn');
-var invariant = require('invariant');
-var KeyEscapeUtils = require('KeyEscapeUtils');
-var warning = require('warning');
+import ReactCurrentOwner from 'ReactCurrentOwner';
+import ReactElement from 'ReactElement';
+import getIteratorFn from 'getIteratorFn';
+import invariant from 'invariant';
+import KeyEscapeUtils from 'KeyEscapeUtils';
+import warning from 'warning';
 
 var SEPARATOR = '.';
 var SUBSEPARATOR = ':';
@@ -202,4 +234,4 @@ function traverseAllChildren(children, callback, traverseContext) {
   return traverseAllChildrenImpl(children, '', callback, traverseContext);
 }
 
-module.exports = traverseAllChildren;
+export default traverseAllChildren;

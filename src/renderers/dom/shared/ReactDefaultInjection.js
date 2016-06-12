@@ -9,27 +9,59 @@
  * @providesModule ReactDefaultInjection
  */
 
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactDefaultInjection
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactDefaultInjection
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactDefaultInjection
+ */
+
 'use strict';
 
-var BeforeInputEventPlugin = require('BeforeInputEventPlugin');
-var ChangeEventPlugin = require('ChangeEventPlugin');
-var DefaultEventPluginOrder = require('DefaultEventPluginOrder');
-var EnterLeaveEventPlugin = require('EnterLeaveEventPlugin');
-var HTMLDOMPropertyConfig = require('HTMLDOMPropertyConfig');
-var ReactComponentBrowserEnvironment =
-  require('ReactComponentBrowserEnvironment');
-var ReactDOMComponent = require('ReactDOMComponent');
-var ReactDOMComponentTree = require('ReactDOMComponentTree');
-var ReactDOMEmptyComponent = require('ReactDOMEmptyComponent');
-var ReactDOMTreeTraversal = require('ReactDOMTreeTraversal');
-var ReactDOMTextComponent = require('ReactDOMTextComponent');
-var ReactDefaultBatchingStrategy = require('ReactDefaultBatchingStrategy');
-var ReactEventListener = require('ReactEventListener');
-var ReactInjection = require('ReactInjection');
-var ReactReconcileTransaction = require('ReactReconcileTransaction');
-var SVGDOMPropertyConfig = require('SVGDOMPropertyConfig');
-var SelectEventPlugin = require('SelectEventPlugin');
-var SimpleEventPlugin = require('SimpleEventPlugin');
+import BeforeInputEventPlugin from 'BeforeInputEventPlugin';
+import ChangeEventPlugin from 'ChangeEventPlugin';
+import DefaultEventPluginOrder from 'DefaultEventPluginOrder';
+import EnterLeaveEventPlugin from 'EnterLeaveEventPlugin';
+import HTMLDOMPropertyConfig from 'HTMLDOMPropertyConfig';
+import ReactComponentBrowserEnvironment from 'ReactComponentBrowserEnvironment';
+import ReactDOMComponent from 'ReactDOMComponent';
+import ReactDOMComponentTree from 'ReactDOMComponentTree';
+import ReactDOMEmptyComponent from 'ReactDOMEmptyComponent';
+import ReactDOMTreeTraversal from 'ReactDOMTreeTraversal';
+import ReactDOMTextComponent from 'ReactDOMTextComponent';
+import ReactDefaultBatchingStrategy from 'ReactDefaultBatchingStrategy';
+import ReactEventListener from 'ReactEventListener';
+import ReactInjection from 'ReactInjection';
+import ReactReconcileTransaction from 'ReactReconcileTransaction';
+import SVGDOMPropertyConfig from 'SVGDOMPropertyConfig';
+import SelectEventPlugin from 'SelectEventPlugin';
+import SimpleEventPlugin from 'SimpleEventPlugin';
 
 var alreadyInjected = false;
 
@@ -92,6 +124,6 @@ function inject() {
   ReactInjection.Component.injectEnvironment(ReactComponentBrowserEnvironment);
 }
 
-module.exports = {
+export default {
   inject: inject,
 };

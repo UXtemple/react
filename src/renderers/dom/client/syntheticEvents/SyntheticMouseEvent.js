@@ -9,12 +9,44 @@
  * @providesModule SyntheticMouseEvent
  */
 
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule SyntheticMouseEvent
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule SyntheticMouseEvent
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule SyntheticMouseEvent
+ */
+
 'use strict';
 
-var SyntheticUIEvent = require('SyntheticUIEvent');
-var ViewportMetrics = require('ViewportMetrics');
-
-var getEventModifierState = require('getEventModifierState');
+import SyntheticUIEvent from 'SyntheticUIEvent';
+import ViewportMetrics from 'ViewportMetrics';
+import getEventModifierState from 'getEventModifierState';
 
 /**
  * @interface MouseEvent
@@ -77,4 +109,4 @@ function SyntheticMouseEvent(dispatchConfig, dispatchMarker, nativeEvent, native
 
 SyntheticUIEvent.augmentClass(SyntheticMouseEvent, MouseEventInterface);
 
-module.exports = SyntheticMouseEvent;
+export default SyntheticMouseEvent;

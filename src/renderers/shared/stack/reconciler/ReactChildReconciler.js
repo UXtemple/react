@@ -9,16 +9,48 @@
  * @providesModule ReactChildReconciler
  */
 
+/**
+ * Copyright 2014-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactChildReconciler
+ */
+
+/**
+ * Copyright 2014-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactChildReconciler
+ */
+
+/**
+ * Copyright 2014-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactChildReconciler
+ */
+
 'use strict';
 
-var ReactReconciler = require('ReactReconciler');
-
-var ReactComponentTreeDevtool = require('ReactComponentTreeDevtool');
-var instantiateReactComponent = require('instantiateReactComponent');
-var KeyEscapeUtils = require('KeyEscapeUtils');
-var shouldUpdateReactComponent = require('shouldUpdateReactComponent');
-var traverseAllChildren = require('traverseAllChildren');
-var warning = require('warning');
+import ReactReconciler from 'ReactReconciler';
+import ReactComponentTreeDevtool from 'ReactComponentTreeDevtool';
+import instantiateReactComponent from 'instantiateReactComponent';
+import KeyEscapeUtils from 'KeyEscapeUtils';
+import shouldUpdateReactComponent from 'shouldUpdateReactComponent';
+import traverseAllChildren from 'traverseAllChildren';
+import warning from 'warning';
 
 function instantiateChild(childInstances, child, name, selfDebugID) {
   // We found a component instance.
@@ -158,4 +190,4 @@ var ReactChildReconciler = {
 
 };
 
-module.exports = ReactChildReconciler;
+export default ReactChildReconciler;

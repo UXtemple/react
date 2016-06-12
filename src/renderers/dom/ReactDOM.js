@@ -11,26 +11,49 @@
 
 /* globals __REACT_DEVTOOLS_GLOBAL_HOOK__*/
 
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactDOM
+ */
+
+/* globals __REACT_DEVTOOLS_GLOBAL_HOOK__*/
+
 'use strict';
 
-var ReactDOMComponentTree = require('ReactDOMComponentTree');
-var ReactDefaultInjection = require('ReactDefaultInjection');
-var ReactMount = require('ReactMount');
-var ReactReconciler = require('ReactReconciler');
-var ReactUpdates = require('ReactUpdates');
-var ReactVersion = require('ReactVersion');
-
-var findDOMNode = require('findDOMNode');
-var getHostComponentFromComposite = require('getHostComponentFromComposite');
-var renderSubtreeIntoContainer = require('renderSubtreeIntoContainer');
-var warning = require('warning');
+import ExecutionEnvironment from 'ExecutionEnvironment'; // __DEV__
+import ReactDOMComponentTree from 'ReactDOMComponentTree';
+import ReactDefaultInjection from 'ReactDefaultInjection';
+import ReactMount from 'ReactMount';
+import ReactReconciler from 'ReactReconciler';
+import ReactUpdates from 'ReactUpdates';
+import ReactVersion from 'ReactVersion';
+import findDOMNode from 'findDOMNode';
+import getHostComponentFromComposite from 'getHostComponentFromComposite';
+import renderSubtreeIntoContainer from 'renderSubtreeIntoContainer';
+import warning from 'warning';
 
 ReactDefaultInjection.inject();
 
-var React = {
+export const render = ReactMount.render;
+export const unmountComponentAtNode = ReactMount.unmountComponentAtNode;
+export const unstable_batchedUpdates = ReactUpdates.batchedUpdates;
+
+export {
+  findDOMNode,
+  ReactVersion as version,
+  renderSubtreeIntoContainer as unstable_renderSubtreeIntoContainer,
+};
+
+export default {
   findDOMNode: findDOMNode,
-  render: ReactMount.render,
-  unmountComponentAtNode: ReactMount.unmountComponentAtNode,
+  render: render,
+  unmountComponentAtNode: unmountComponentAtNode,
   version: ReactVersion,
 
   /* eslint-disable camelcase */
@@ -66,7 +89,6 @@ if (
 }
 
 if (__DEV__) {
-  var ExecutionEnvironment = require('ExecutionEnvironment');
   if (ExecutionEnvironment.canUseDOM && window.top === window.self) {
 
     // First check if devtools is not installed
@@ -134,5 +156,3 @@ if (__DEV__) {
     }
   }
 }
-
-module.exports = React;

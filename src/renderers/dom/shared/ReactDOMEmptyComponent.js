@@ -9,10 +9,43 @@
  * @providesModule ReactDOMEmptyComponent
  */
 
+/**
+ * Copyright 2014-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactDOMEmptyComponent
+ */
+
+/**
+ * Copyright 2014-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactDOMEmptyComponent
+ */
+
+/**
+ * Copyright 2014-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactDOMEmptyComponent
+ */
+
 'use strict';
 
-var DOMLazyTree = require('DOMLazyTree');
-var ReactDOMComponentTree = require('ReactDOMComponentTree');
+import DOMLazyTree from 'DOMLazyTree';
+import ReactDOMComponentTree from 'ReactDOMComponentTree';
 
 
 var ReactDOMEmptyComponent = function(instantiate) {
@@ -62,4 +95,4 @@ Object.assign(ReactDOMEmptyComponent.prototype, {
   },
 });
 
-module.exports = ReactDOMEmptyComponent;
+export default ReactDOMEmptyComponent;

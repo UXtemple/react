@@ -1,0 +1,14 @@
+{
+  "name": "alias-provides-modules",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Darío Javier Cravero <dario@uxtemple.com>",
+  "license": "MIT",
+  "dependencies": {
+    "glob": "^7.0.3"
+  }
+}

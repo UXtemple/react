@@ -9,12 +9,44 @@
  * @providesModule ReactDOMComponentTree
  */
 
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactDOMComponentTree
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactDOMComponentTree
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactDOMComponentTree
+ */
+
 'use strict';
 
-var DOMProperty = require('DOMProperty');
-var ReactDOMComponentFlags = require('ReactDOMComponentFlags');
-
-var invariant = require('invariant');
+import DOMProperty from 'DOMProperty';
+import ReactDOMComponentFlags from 'ReactDOMComponentFlags';
+import invariant from 'invariant';
 
 var ATTR_NAME = DOMProperty.ID_ATTRIBUTE_NAME;
 var Flags = ReactDOMComponentFlags;
@@ -195,4 +227,4 @@ var ReactDOMComponentTree = {
   uncacheNode: uncacheNode,
 };
 
-module.exports = ReactDOMComponentTree;
+export default ReactDOMComponentTree;

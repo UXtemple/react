@@ -9,9 +9,42 @@
  * @providesModule ReactInstanceHandles
  */
 
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactInstanceHandles
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactInstanceHandles
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactInstanceHandles
+ */
+
 'use strict';
 
-var invariant = require('invariant');
+import invariant from 'invariant';
 
 var SEPARATOR = '.';
 var SEPARATOR_LENGTH = SEPARATOR.length;
@@ -334,4 +367,4 @@ var ReactInstanceHandles = {
 
 };
 
-module.exports = ReactInstanceHandles;
+export default ReactInstanceHandles;

@@ -9,14 +9,46 @@
  * @providesModule EnterLeaveEventPlugin
  */
 
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule EnterLeaveEventPlugin
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule EnterLeaveEventPlugin
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule EnterLeaveEventPlugin
+ */
+
 'use strict';
 
-var EventConstants = require('EventConstants');
-var EventPropagators = require('EventPropagators');
-var ReactDOMComponentTree = require('ReactDOMComponentTree');
-var SyntheticMouseEvent = require('SyntheticMouseEvent');
-
-var keyOf = require('keyOf');
+import EventConstants from 'EventConstants';
+import EventPropagators from 'EventPropagators';
+import ReactDOMComponentTree from 'ReactDOMComponentTree';
+import SyntheticMouseEvent from 'SyntheticMouseEvent';
+import keyOf from 'keyOf';
 
 var topLevelTypes = EventConstants.topLevelTypes;
 
@@ -128,4 +160,4 @@ var EnterLeaveEventPlugin = {
 
 };
 
-module.exports = EnterLeaveEventPlugin;
+export default EnterLeaveEventPlugin;

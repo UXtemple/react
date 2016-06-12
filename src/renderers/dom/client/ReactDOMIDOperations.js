@@ -9,10 +9,43 @@
  * @providesModule ReactDOMIDOperations
  */
 
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactDOMIDOperations
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactDOMIDOperations
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactDOMIDOperations
+ */
+
 'use strict';
 
-var DOMChildrenOperations = require('DOMChildrenOperations');
-var ReactDOMComponentTree = require('ReactDOMComponentTree');
+import DOMChildrenOperations from 'DOMChildrenOperations';
+import ReactDOMComponentTree from 'ReactDOMComponentTree';
 
 /**
  * Operations used to process updates to DOM nodes.
@@ -31,4 +64,4 @@ var ReactDOMIDOperations = {
   },
 };
 
-module.exports = ReactDOMIDOperations;
+export default ReactDOMIDOperations;

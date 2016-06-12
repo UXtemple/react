@@ -9,11 +9,43 @@
  * @providesModule SyntheticTouchEvent
  */
 
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule SyntheticTouchEvent
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule SyntheticTouchEvent
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule SyntheticTouchEvent
+ */
+
 'use strict';
 
-var SyntheticUIEvent = require('SyntheticUIEvent');
-
-var getEventModifierState = require('getEventModifierState');
+import SyntheticUIEvent from 'SyntheticUIEvent';
+import getEventModifierState from 'getEventModifierState';
 
 /**
  * @interface TouchEvent
@@ -42,4 +74,4 @@ function SyntheticTouchEvent(dispatchConfig, dispatchMarker, nativeEvent, native
 
 SyntheticUIEvent.augmentClass(SyntheticTouchEvent, TouchEventInterface);
 
-module.exports = SyntheticTouchEvent;
+export default SyntheticTouchEvent;

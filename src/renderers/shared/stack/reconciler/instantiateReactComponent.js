@@ -9,15 +9,47 @@
  * @providesModule instantiateReactComponent
  */
 
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule instantiateReactComponent
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule instantiateReactComponent
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule instantiateReactComponent
+ */
+
 'use strict';
 
-var ReactCompositeComponent = require('ReactCompositeComponent');
-var ReactEmptyComponent = require('ReactEmptyComponent');
-var ReactHostComponent = require('ReactHostComponent');
-var ReactInstrumentation = require('ReactInstrumentation');
-
-var invariant = require('invariant');
-var warning = require('warning');
+import ReactCompositeComponent from 'ReactCompositeComponent';
+import ReactEmptyComponent from 'ReactEmptyComponent';
+import ReactHostComponent from 'ReactHostComponent';
+import ReactInstrumentation from 'ReactInstrumentation';
+import invariant from 'invariant';
+import warning from 'warning';
 
 // To avoid a cyclic dependency, we create the final class in this module
 var ReactCompositeComponentWrapper = function(element) {
@@ -165,4 +197,4 @@ function instantiateReactComponent(node) {
   return instance;
 }
 
-module.exports = instantiateReactComponent;
+export default instantiateReactComponent;

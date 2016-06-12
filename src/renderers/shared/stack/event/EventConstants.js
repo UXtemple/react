@@ -9,9 +9,42 @@
  * @providesModule EventConstants
  */
 
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule EventConstants
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule EventConstants
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule EventConstants
+ */
+
 'use strict';
 
-var keyMirror = require('keyMirror');
+import keyMirror from 'keyMirror';
 
 var PropagationPhases = keyMirror({bubbled: null, captured: null});
 
@@ -89,9 +122,7 @@ var topLevelTypes = keyMirror({
   topWheel: null,
 });
 
-var EventConstants = {
+export default {
   topLevelTypes: topLevelTypes,
   PropagationPhases: PropagationPhases,
 };
-
-module.exports = EventConstants;

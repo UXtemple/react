@@ -9,15 +9,47 @@
  * @providesModule DOMPropertyOperations
  */
 
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule DOMPropertyOperations
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule DOMPropertyOperations
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule DOMPropertyOperations
+ */
+
 'use strict';
 
-var DOMProperty = require('DOMProperty');
-var ReactDOMComponentTree = require('ReactDOMComponentTree');
-var ReactDOMInstrumentation = require('ReactDOMInstrumentation');
-var ReactInstrumentation = require('ReactInstrumentation');
-
-var quoteAttributeValueForBrowser = require('quoteAttributeValueForBrowser');
-var warning = require('warning');
+import DOMProperty from 'DOMProperty';
+import ReactDOMComponentTree from 'ReactDOMComponentTree';
+import ReactDOMInstrumentation from 'ReactDOMInstrumentation';
+import ReactInstrumentation from 'ReactInstrumentation';
+import quoteAttributeValueForBrowser from 'quoteAttributeValueForBrowser';
+import warning from 'warning';
 
 var VALID_ATTRIBUTE_NAME_REGEX = new RegExp(
   '^[' + DOMProperty.ATTRIBUTE_NAME_START_CHAR + '][' + DOMProperty.ATTRIBUTE_NAME_CHAR + ']*$'
@@ -267,4 +299,4 @@ var DOMPropertyOperations = {
 
 };
 
-module.exports = DOMPropertyOperations;
+export default DOMPropertyOperations;

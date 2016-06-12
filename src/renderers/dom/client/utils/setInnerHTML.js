@@ -9,15 +9,48 @@
  * @providesModule setInnerHTML
  */
 
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule setInnerHTML
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule setInnerHTML
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule setInnerHTML
+ */
+
 'use strict';
 
-var ExecutionEnvironment = require('ExecutionEnvironment');
-var DOMNamespaces = require('DOMNamespaces');
+import ExecutionEnvironment from 'ExecutionEnvironment';
+import DOMNamespaces from 'DOMNamespaces';
 
 var WHITESPACE_TEST = /^[ \r\n\t\f]/;
 var NONVISIBLE_TEST = /<(!--|link|noscript|meta|script|style)[ \r\n\t\f\/>]/;
 
-var createMicrosoftUnsafeLocalFunction = require('createMicrosoftUnsafeLocalFunction');
+import createMicrosoftUnsafeLocalFunction from 'createMicrosoftUnsafeLocalFunction';
 
 // SVG temp container for IE lacking innerHTML
 var reusableSVGContainer;
@@ -98,4 +131,4 @@ if (ExecutionEnvironment.canUseDOM) {
   testElement = null;
 }
 
-module.exports = setInnerHTML;
+export default setInnerHTML;

@@ -9,17 +9,49 @@
  * @providesModule CSSPropertyOperations
  */
 
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule CSSPropertyOperations
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule CSSPropertyOperations
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule CSSPropertyOperations
+ */
+
 'use strict';
 
-var CSSProperty = require('CSSProperty');
-var ExecutionEnvironment = require('ExecutionEnvironment');
-var ReactInstrumentation = require('ReactInstrumentation');
-
-var camelizeStyleName = require('camelizeStyleName');
-var dangerousStyleValue = require('dangerousStyleValue');
-var hyphenateStyleName = require('hyphenateStyleName');
-var memoizeStringOnly = require('memoizeStringOnly');
-var warning = require('warning');
+import CSSProperty from 'CSSProperty';
+import ExecutionEnvironment from 'ExecutionEnvironment';
+import ReactInstrumentation from 'ReactInstrumentation';
+import camelizeStyleName from 'camelizeStyleName';
+import dangerousStyleValue from 'dangerousStyleValue';
+import hyphenateStyleName from 'hyphenateStyleName';
+import memoizeStringOnly from 'memoizeStringOnly';
+import warning from 'warning';
 
 var processStyleName = memoizeStringOnly(function(styleName) {
   return hyphenateStyleName(styleName);
@@ -237,4 +269,4 @@ var CSSPropertyOperations = {
 
 };
 
-module.exports = CSSPropertyOperations;
+export default CSSPropertyOperations;

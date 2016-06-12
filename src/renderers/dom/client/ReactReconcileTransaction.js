@@ -9,13 +9,46 @@
  * @providesModule ReactReconcileTransaction
  */
 
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactReconcileTransaction
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactReconcileTransaction
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactReconcileTransaction
+ */
+
 'use strict';
 
-var CallbackQueue = require('CallbackQueue');
-var PooledClass = require('PooledClass');
-var ReactBrowserEventEmitter = require('ReactBrowserEventEmitter');
-var ReactInputSelection = require('ReactInputSelection');
-var Transaction = require('Transaction');
+import CallbackQueue from 'CallbackQueue';
+import PooledClass from 'PooledClass';
+import ReactBrowserEventEmitter from 'ReactBrowserEventEmitter';
+import ReactInputSelection from 'ReactInputSelection';
+import Transaction from 'Transaction';
 
 
 /**
@@ -163,4 +196,4 @@ Object.assign(ReactReconcileTransaction.prototype, Transaction.Mixin, Mixin);
 
 PooledClass.addPoolingTo(ReactReconcileTransaction);
 
-module.exports = ReactReconcileTransaction;
+export default ReactReconcileTransaction;

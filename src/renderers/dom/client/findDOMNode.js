@@ -9,15 +9,47 @@
  * @providesModule findDOMNode
  */
 
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule findDOMNode
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule findDOMNode
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule findDOMNode
+ */
+
 'use strict';
 
-var ReactCurrentOwner = require('ReactCurrentOwner');
-var ReactDOMComponentTree = require('ReactDOMComponentTree');
-var ReactInstanceMap = require('ReactInstanceMap');
-
-var getHostComponentFromComposite = require('getHostComponentFromComposite');
-var invariant = require('invariant');
-var warning = require('warning');
+import ReactCurrentOwner from 'ReactCurrentOwner';
+import ReactDOMComponentTree from 'ReactDOMComponentTree';
+import ReactInstanceMap from 'ReactInstanceMap';
+import getHostComponentFromComposite from 'getHostComponentFromComposite';
+import invariant from 'invariant';
+import warning from 'warning';
 
 /**
  * Returns the DOM node rendered by this element.
@@ -70,4 +102,4 @@ function findDOMNode(componentOrElement) {
   }
 }
 
-module.exports = findDOMNode;
+export default findDOMNode;

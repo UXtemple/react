@@ -9,9 +9,42 @@
  * @providesModule deprecated
  */
 
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule deprecated
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule deprecated
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule deprecated
+ */
+
 'use strict';
 
-var warning = require('warning');
+import warning from 'warning';
 
 /**
  * This will log a single deprecation notice per function and forward the call
@@ -53,4 +86,4 @@ function deprecated(fnName, newModule, newPackage, ctx, fn) {
   return fn;
 }
 
-module.exports = deprecated;
+export default deprecated;

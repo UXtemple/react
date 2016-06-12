@@ -9,25 +9,56 @@
  * @providesModule ReactCompositeComponent
  */
 
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactCompositeComponent
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactCompositeComponent
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactCompositeComponent
+ */
+
 'use strict';
 
-var ReactComponentEnvironment = require('ReactComponentEnvironment');
-var ReactCurrentOwner = require('ReactCurrentOwner');
-var ReactElement = require('ReactElement');
-var ReactErrorUtils = require('ReactErrorUtils');
-var ReactInstanceMap = require('ReactInstanceMap');
-var ReactInstrumentation = require('ReactInstrumentation');
-var ReactNodeTypes = require('ReactNodeTypes');
-var ReactPropTypeLocations = require('ReactPropTypeLocations');
-var ReactReconciler = require('ReactReconciler');
-var ReactUpdateQueue = require('ReactUpdateQueue');
-
-var checkReactTypeSpec = require('checkReactTypeSpec');
-
-var emptyObject = require('emptyObject');
-var invariant = require('invariant');
-var shouldUpdateReactComponent = require('shouldUpdateReactComponent');
-var warning = require('warning');
+import ReactComponentEnvironment from 'ReactComponentEnvironment';
+import ReactCurrentOwner from 'ReactCurrentOwner';
+import ReactElement from 'ReactElement';
+import ReactErrorUtils from 'ReactErrorUtils';
+import ReactInstanceMap from 'ReactInstanceMap';
+import ReactInstrumentation from 'ReactInstrumentation';
+import ReactNodeTypes from 'ReactNodeTypes';
+import ReactPropTypeLocations from 'ReactPropTypeLocations';
+import ReactReconciler from 'ReactReconciler';
+import ReactUpdateQueue from 'ReactUpdateQueue';
+import checkReactTypeSpec from 'checkReactTypeSpec';
+import emptyObject from 'emptyObject';
+import invariant from 'invariant';
+import shouldUpdateReactComponent from 'shouldUpdateReactComponent';
+import warning from 'warning';
 
 function StatelessComponent(Component) {
 }
@@ -1176,4 +1207,4 @@ var ReactCompositeComponent = {
 
 };
 
-module.exports = ReactCompositeComponent;
+export default ReactCompositeComponent;

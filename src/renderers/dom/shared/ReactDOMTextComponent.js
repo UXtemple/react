@@ -9,16 +9,48 @@
  * @providesModule ReactDOMTextComponent
  */
 
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactDOMTextComponent
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactDOMTextComponent
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactDOMTextComponent
+ */
+
 'use strict';
 
-var DOMChildrenOperations = require('DOMChildrenOperations');
-var DOMLazyTree = require('DOMLazyTree');
-var ReactDOMComponentTree = require('ReactDOMComponentTree');
-var ReactInstrumentation = require('ReactInstrumentation');
-
-var escapeTextContentForBrowser = require('escapeTextContentForBrowser');
-var invariant = require('invariant');
-var validateDOMNesting = require('validateDOMNesting');
+import DOMChildrenOperations from 'DOMChildrenOperations';
+import DOMLazyTree from 'DOMLazyTree';
+import ReactDOMComponentTree from 'ReactDOMComponentTree';
+import ReactInstrumentation from 'ReactInstrumentation';
+import escapeTextContentForBrowser from 'escapeTextContentForBrowser';
+import invariant from 'invariant';
+import validateDOMNesting from 'validateDOMNesting';
 
 /**
  * Text nodes violate a couple assumptions that React makes about components:
@@ -187,4 +219,4 @@ Object.assign(ReactDOMTextComponent.prototype, {
 
 });
 
-module.exports = ReactDOMTextComponent;
+export default ReactDOMTextComponent;

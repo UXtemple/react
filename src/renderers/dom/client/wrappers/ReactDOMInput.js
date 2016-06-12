@@ -9,16 +9,48 @@
  * @providesModule ReactDOMInput
  */
 
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactDOMInput
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactDOMInput
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactDOMInput
+ */
+
 'use strict';
 
-var DisabledInputUtils = require('DisabledInputUtils');
-var DOMPropertyOperations = require('DOMPropertyOperations');
-var LinkedValueUtils = require('LinkedValueUtils');
-var ReactDOMComponentTree = require('ReactDOMComponentTree');
-var ReactUpdates = require('ReactUpdates');
-
-var invariant = require('invariant');
-var warning = require('warning');
+import DisabledInputUtils from 'DisabledInputUtils';
+import DOMPropertyOperations from 'DOMPropertyOperations';
+import LinkedValueUtils from 'LinkedValueUtils';
+import ReactDOMComponentTree from 'ReactDOMComponentTree';
+import ReactUpdates from 'ReactUpdates';
+import invariant from 'invariant';
+import warning from 'warning';
 
 var didWarnValueLink = false;
 var didWarnCheckedLink = false;
@@ -305,4 +337,4 @@ function _handleChange(event) {
   return returnValue;
 }
 
-module.exports = ReactDOMInput;
+export default ReactDOMInput;

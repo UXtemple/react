@@ -9,28 +9,60 @@
  * @providesModule SimpleEventPlugin
  */
 
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule SimpleEventPlugin
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule SimpleEventPlugin
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule SimpleEventPlugin
+ */
+
 'use strict';
 
-var EventConstants = require('EventConstants');
-var EventListener = require('EventListener');
-var EventPropagators = require('EventPropagators');
-var ReactDOMComponentTree = require('ReactDOMComponentTree');
-var SyntheticAnimationEvent = require('SyntheticAnimationEvent');
-var SyntheticClipboardEvent = require('SyntheticClipboardEvent');
-var SyntheticEvent = require('SyntheticEvent');
-var SyntheticFocusEvent = require('SyntheticFocusEvent');
-var SyntheticKeyboardEvent = require('SyntheticKeyboardEvent');
-var SyntheticMouseEvent = require('SyntheticMouseEvent');
-var SyntheticDragEvent = require('SyntheticDragEvent');
-var SyntheticTouchEvent = require('SyntheticTouchEvent');
-var SyntheticTransitionEvent = require('SyntheticTransitionEvent');
-var SyntheticUIEvent = require('SyntheticUIEvent');
-var SyntheticWheelEvent = require('SyntheticWheelEvent');
-
-var emptyFunction = require('emptyFunction');
-var getEventCharCode = require('getEventCharCode');
-var invariant = require('invariant');
-var keyOf = require('keyOf');
+import EventConstants from 'EventConstants';
+import EventListener from 'EventListener';
+import EventPropagators from 'EventPropagators';
+import ReactDOMComponentTree from 'ReactDOMComponentTree';
+import SyntheticAnimationEvent from 'SyntheticAnimationEvent';
+import SyntheticClipboardEvent from 'SyntheticClipboardEvent';
+import SyntheticEvent from 'SyntheticEvent';
+import SyntheticFocusEvent from 'SyntheticFocusEvent';
+import SyntheticKeyboardEvent from 'SyntheticKeyboardEvent';
+import SyntheticMouseEvent from 'SyntheticMouseEvent';
+import SyntheticDragEvent from 'SyntheticDragEvent';
+import SyntheticTouchEvent from 'SyntheticTouchEvent';
+import SyntheticTransitionEvent from 'SyntheticTransitionEvent';
+import SyntheticUIEvent from 'SyntheticUIEvent';
+import SyntheticWheelEvent from 'SyntheticWheelEvent';
+import emptyFunction from 'emptyFunction';
+import getEventCharCode from 'getEventCharCode';
+import invariant from 'invariant';
+import keyOf from 'keyOf';
 
 var topLevelTypes = EventConstants.topLevelTypes;
 
@@ -642,4 +674,4 @@ var SimpleEventPlugin = {
 
 };
 
-module.exports = SimpleEventPlugin;
+export default SimpleEventPlugin;

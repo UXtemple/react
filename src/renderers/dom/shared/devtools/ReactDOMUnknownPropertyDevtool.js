@@ -9,13 +9,45 @@
  * @providesModule ReactDOMUnknownPropertyDevtool
  */
 
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactDOMUnknownPropertyDevtool
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactDOMUnknownPropertyDevtool
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactDOMUnknownPropertyDevtool
+ */
+
 'use strict';
 
-var DOMProperty = require('DOMProperty');
-var EventPluginRegistry = require('EventPluginRegistry');
-var ReactComponentTreeDevtool = require('ReactComponentTreeDevtool');
-
-var warning = require('warning');
+import DOMProperty from 'DOMProperty';
+import EventPluginRegistry from 'EventPluginRegistry';
+import ReactComponentTreeDevtool from 'ReactComponentTreeDevtool';
+import warning from 'warning';
 
 if (__DEV__) {
   var reactProps = {
@@ -119,4 +151,4 @@ var ReactDOMUnknownPropertyDevtool = {
   },
 };
 
-module.exports = ReactDOMUnknownPropertyDevtool;
+export default ReactDOMUnknownPropertyDevtool;

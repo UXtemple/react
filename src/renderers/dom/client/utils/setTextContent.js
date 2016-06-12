@@ -9,11 +9,44 @@
  * @providesModule setTextContent
  */
 
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule setTextContent
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule setTextContent
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule setTextContent
+ */
+
 'use strict';
 
-var ExecutionEnvironment = require('ExecutionEnvironment');
-var escapeTextContentForBrowser = require('escapeTextContentForBrowser');
-var setInnerHTML = require('setInnerHTML');
+import ExecutionEnvironment from 'ExecutionEnvironment';
+import escapeTextContentForBrowser from 'escapeTextContentForBrowser';
+import setInnerHTML from 'setInnerHTML';
 
 /**
  * Set the textContent property of a node, ensuring that whitespace is preserved
@@ -45,4 +78,4 @@ if (ExecutionEnvironment.canUseDOM) {
   }
 }
 
-module.exports = setTextContent;
+export default setTextContent;

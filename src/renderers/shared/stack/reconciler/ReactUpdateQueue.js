@@ -9,15 +9,47 @@
  * @providesModule ReactUpdateQueue
  */
 
+/**
+ * Copyright 2015-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactUpdateQueue
+ */
+
+/**
+ * Copyright 2015-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactUpdateQueue
+ */
+
+/**
+ * Copyright 2015-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactUpdateQueue
+ */
+
 'use strict';
 
-var ReactCurrentOwner = require('ReactCurrentOwner');
-var ReactInstanceMap = require('ReactInstanceMap');
-var ReactInstrumentation = require('ReactInstrumentation');
-var ReactUpdates = require('ReactUpdates');
-
-var invariant = require('invariant');
-var warning = require('warning');
+import ReactCurrentOwner from 'ReactCurrentOwner';
+import ReactInstanceMap from 'ReactInstanceMap';
+import ReactInstrumentation from 'ReactInstrumentation';
+import ReactUpdates from 'ReactUpdates';
+import invariant from 'invariant';
+import warning from 'warning';
 
 function enqueueUpdate(internalInstance) {
   ReactUpdates.enqueueUpdate(internalInstance);
@@ -263,4 +295,4 @@ var ReactUpdateQueue = {
 
 };
 
-module.exports = ReactUpdateQueue;
+export default ReactUpdateQueue;

@@ -9,16 +9,48 @@
  * @providesModule BeforeInputEventPlugin
  */
 
+/**
+ * Copyright 2013-present Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule BeforeInputEventPlugin
+ */
+
+/**
+ * Copyright 2013-present Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule BeforeInputEventPlugin
+ */
+
+/**
+ * Copyright 2013-present Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule BeforeInputEventPlugin
+ */
+
 'use strict';
 
-var EventConstants = require('EventConstants');
-var EventPropagators = require('EventPropagators');
-var ExecutionEnvironment = require('ExecutionEnvironment');
-var FallbackCompositionState = require('FallbackCompositionState');
-var SyntheticCompositionEvent = require('SyntheticCompositionEvent');
-var SyntheticInputEvent = require('SyntheticInputEvent');
-
-var keyOf = require('keyOf');
+import EventConstants from 'EventConstants';
+import EventPropagators from 'EventPropagators';
+import ExecutionEnvironment from 'ExecutionEnvironment';
+import FallbackCompositionState from 'FallbackCompositionState';
+import SyntheticCompositionEvent from 'SyntheticCompositionEvent';
+import SyntheticInputEvent from 'SyntheticInputEvent';
+import keyOf from 'keyOf';
 
 var END_KEYCODES = [9, 13, 27, 32]; // Tab, Return, Esc, Space
 var START_KEYCODE = 229;
@@ -477,4 +509,4 @@ var BeforeInputEventPlugin = {
   },
 };
 
-module.exports = BeforeInputEventPlugin;
+export default BeforeInputEventPlugin;

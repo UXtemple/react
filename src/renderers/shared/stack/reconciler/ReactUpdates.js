@@ -9,16 +9,48 @@
  * @providesModule ReactUpdates
  */
 
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactUpdates
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactUpdates
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactUpdates
+ */
+
 'use strict';
 
-var CallbackQueue = require('CallbackQueue');
-var PooledClass = require('PooledClass');
-var ReactFeatureFlags = require('ReactFeatureFlags');
-var ReactInstrumentation = require('ReactInstrumentation');
-var ReactReconciler = require('ReactReconciler');
-var Transaction = require('Transaction');
-
-var invariant = require('invariant');
+import CallbackQueue from 'CallbackQueue';
+import PooledClass from 'PooledClass';
+import ReactFeatureFlags from 'ReactFeatureFlags';
+import ReactInstrumentation from 'ReactInstrumentation';
+import ReactReconciler from 'ReactReconciler';
+import Transaction from 'Transaction';
+import invariant from 'invariant';
 
 var dirtyComponents = [];
 var updateBatchNumber = 0;
@@ -302,4 +334,4 @@ var ReactUpdates = {
   asap: asap,
 };
 
-module.exports = ReactUpdates;
+export default ReactUpdates;

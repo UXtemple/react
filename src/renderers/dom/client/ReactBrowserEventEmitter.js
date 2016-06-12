@@ -9,15 +9,47 @@
  * @providesModule ReactBrowserEventEmitter
  */
 
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactBrowserEventEmitter
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactBrowserEventEmitter
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactBrowserEventEmitter
+ */
+
 'use strict';
 
-var EventConstants = require('EventConstants');
-var EventPluginRegistry = require('EventPluginRegistry');
-var ReactEventEmitterMixin = require('ReactEventEmitterMixin');
-var ViewportMetrics = require('ViewportMetrics');
-
-var getVendorPrefixedEventName = require('getVendorPrefixedEventName');
-var isEventSupported = require('isEventSupported');
+import EventConstants from 'EventConstants';
+import EventPluginRegistry from 'EventPluginRegistry';
+import ReactEventEmitterMixin from 'ReactEventEmitterMixin';
+import ViewportMetrics from 'ViewportMetrics';
+import getVendorPrefixedEventName from 'getVendorPrefixedEventName';
+import isEventSupported from 'isEventSupported';
 
 /**
  * Summary of `ReactBrowserEventEmitter` event handling:
@@ -371,4 +403,4 @@ var ReactBrowserEventEmitter = Object.assign({}, ReactEventEmitterMixin, {
 
 });
 
-module.exports = ReactBrowserEventEmitter;
+export default ReactBrowserEventEmitter;

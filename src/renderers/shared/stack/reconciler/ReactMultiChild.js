@@ -9,20 +9,51 @@
  * @providesModule ReactMultiChild
  */
 
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactMultiChild
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactMultiChild
+ */
+
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * @providesModule ReactMultiChild
+ */
+
 'use strict';
 
-var ReactComponentEnvironment = require('ReactComponentEnvironment');
-var ReactInstanceMap = require('ReactInstanceMap');
-var ReactInstrumentation = require('ReactInstrumentation');
-var ReactMultiChildUpdateTypes = require('ReactMultiChildUpdateTypes');
-
-var ReactCurrentOwner = require('ReactCurrentOwner');
-var ReactReconciler = require('ReactReconciler');
-var ReactChildReconciler = require('ReactChildReconciler');
-
-var emptyFunction = require('emptyFunction');
-var flattenChildren = require('flattenChildren');
-var invariant = require('invariant');
+import ReactComponentEnvironment from 'ReactComponentEnvironment';
+import ReactInstanceMap from 'ReactInstanceMap';
+import ReactInstrumentation from 'ReactInstrumentation';
+import ReactMultiChildUpdateTypes from 'ReactMultiChildUpdateTypes';
+import ReactCurrentOwner from 'ReactCurrentOwner';
+import ReactReconciler from 'ReactReconciler';
+import ReactChildReconciler from 'ReactChildReconciler';
+import emptyFunction from 'emptyFunction';
+import flattenChildren from 'flattenChildren';
+import invariant from 'invariant';
 
 /**
  * Make an update for markup to be rendered and inserted at a supplied index.
@@ -501,4 +532,4 @@ var ReactMultiChild = {
 
 };
 
-module.exports = ReactMultiChild;
+export default ReactMultiChild;
